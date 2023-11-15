@@ -106,10 +106,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\sim.cc" />
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.cc" />
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.cc" />
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\detector.cc" />
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.cc" />
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.cc" />
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.hh" />
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.hh" />
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\detector.hh" />
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.hh" />
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.hh" />
   </ItemGroup>

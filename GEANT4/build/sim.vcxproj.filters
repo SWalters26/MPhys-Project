@@ -10,6 +10,9 @@
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\detector.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -22,6 +25,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\detector.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.hh">

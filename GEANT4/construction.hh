@@ -9,16 +9,19 @@
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
 
-class DetectorConstruction : public G4VUserDetectorConstruction
+#include "detector.hh"
+
+class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
 public:
-	DetectorConstruction();
-	~DetectorConstruction();
+	MyDetectorConstruction();
+	~MyDetectorConstruction();
 
 	virtual G4VPhysicalVolume *Construct();
 
 private:
 	G4LogicalVolume *logicDetector;
+	virtual void ConstructSDandField();
 };
 
 #endif
