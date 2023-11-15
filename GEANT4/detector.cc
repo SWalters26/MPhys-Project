@@ -30,5 +30,14 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *R0his
 
 	G4cout << "Detector position: " << posDetector << G4endl; //will give us the detector position when detector is hit by a photon
 
+	G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+
+	G4AnalysisManager *man = G4AnalysisManager::Instance();
+	man->FillNtupleIColumn(0, evt);
+	man->FillNtupleDColumn(1, posDetector[0]);
+	man->FillNtupleDColumn(2, posDetector[1]);
+	man->FillNtupleDColumn(3, posDetector[2]);
+	man->AddNtupleRow(0);
+
 	return true;
 }

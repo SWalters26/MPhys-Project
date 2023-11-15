@@ -19,6 +19,9 @@
     <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\run.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.hh">
@@ -34,6 +37,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\run.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
