@@ -15,6 +15,12 @@ file(GLOB MACRO_FILES
 
 file(COPY ${MACRO_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
+file(GLOB DATA_FILES  #For reading data files of QE data when available
+	"*.dat"
+)
+
+file(COPY ${DATA_FILES} DESTINATION ${PROJECT_BINARY_DIR})
+
 add_executable(sim sim.cc ${sources} ${headers})
 target_link_libraries(sim ${Geant4_LIBRARIES})
 
