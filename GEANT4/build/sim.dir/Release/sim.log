@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/CMakeLists.txt
+  sim.cc
+  action.cc
+  construction.cc
+  generator.cc
+  physics.cc
+  Generating Code...
+  sim.vcxproj -> C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\Release\sim.exe

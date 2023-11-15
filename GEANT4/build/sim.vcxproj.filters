@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\sim.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{94D2DB9E-39CF-3863-84F5-119909D996C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6401668E-7E20-3EEA-97C0-1B259E530CB6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

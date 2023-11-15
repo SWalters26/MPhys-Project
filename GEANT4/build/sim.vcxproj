@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BBABBC78-4E1C-3CBE-B56D-833B61230E1F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sim</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sim.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sim</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/sean/OneDrive/Documents/MPhys/Project/GEANT4/geant4-v11.1.2 (1)/Program Files/include/Geant4" /external:I "C:/Qt/5.15.15/msvc2019_64/include" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtCore" /external:I "C:/Qt/5.15.15/msvc2019_64/./mkspecs/win32-msvc" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtGui" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtANGLE" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtWidgets" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtOpenGL" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtPrintSupport" /external:I "C:/Qt/5.15.15/msvc2019_64/include/Qt3DCore" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtNetwork" /external:I "C:/Qt/5.15.15/msvc2019_64/include/Qt3DExtras" /external:I "C:/Qt/5.15.15/msvc2019_64/include/Qt3DRender" /external:I "C:/Qt/5.15.15/msvc2019_64/include/Qt3DInput" /external:I "C:/Qt/5.15.15/msvc2019_64/include/QtGamepad" /external:I "C:/Qt/5.15.15/msvc2019_64/include/Qt3DLogic"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_3DCORE_LIB;QT_NETWORK_LIB;QT_3DEXTRAS_LIB;QT_3DRENDER_LIB;QT_3DINPUT_LIB;QT_GAMEPAD_LIB;QT_3DLOGIC_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;G4VIS_USE_QT3D;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;G4LIB_BUILD_DLL;PTL_BUILD_DLL;QT_CORE_LIB;QT_NO_DEBUG;QT_GUI_LIB;QT_WIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_3DCORE_LIB;QT_NETWORK_LIB;QT_3DEXTRAS_LIB;QT_3DRENDER_LIB;QT_3DINPUT_LIB;QT_GAMEPAD_LIB;QT_3DLOGIC_LIB;G4UI_USE_WIN32;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_TOOLSSG_QT_GLES;G4VIS_USE_OPENGL;G4VIS_USE_QT3D;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\include\Geant4;C:\Qt\5.15.15\msvc2019_64\include;C:\Qt\5.15.15\msvc2019_64\include\QtCore;C:\Qt\5.15.15\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.15\msvc2019_64\include\QtGui;C:\Qt\5.15.15\msvc2019_64\include\QtANGLE;C:\Qt\5.15.15\msvc2019_64\include\QtWidgets;C:\Qt\5.15.15\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.15\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.15\msvc2019_64\include\Qt3DCore;C:\Qt\5.15.15\msvc2019_64\include\QtNetwork;C:\Qt\5.15.15\msvc2019_64\include\Qt3DExtras;C:\Qt\5.15.15\msvc2019_64\include\Qt3DRender;C:\Qt\5.15.15\msvc2019_64\include\Qt3DInput;C:\Qt\5.15.15\msvc2019_64\include\QtGamepad;C:\Qt\5.15.15\msvc2019_64\include\Qt3DLogic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\include\Geant4;C:\Qt\5.15.15\msvc2019_64\include;C:\Qt\5.15.15\msvc2019_64\include\QtCore;C:\Qt\5.15.15\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.15\msvc2019_64\include\QtGui;C:\Qt\5.15.15\msvc2019_64\include\QtANGLE;C:\Qt\5.15.15\msvc2019_64\include\QtWidgets;C:\Qt\5.15.15\msvc2019_64\include\QtOpenGL;C:\Qt\5.15.15\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.15\msvc2019_64\include\Qt3DCore;C:\Qt\5.15.15\msvc2019_64\include\QtNetwork;C:\Qt\5.15.15\msvc2019_64\include\Qt3DExtras;C:\Qt\5.15.15\msvc2019_64\include\Qt3DRender;C:\Qt\5.15.15\msvc2019_64\include\Qt3DInput;C:\Qt\5.15.15\msvc2019_64\include\QtGamepad;C:\Qt\5.15.15\msvc2019_64\include\Qt3DLogic;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4Tree.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4FR.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4GMocren.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4visHepRep.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4RayTracer.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4VRML.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4ToolsSG.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4OpenGL.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4visQt3D.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4vis_management.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4modeling.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4interfaces.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4persistency.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4error_propagation.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4readout.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4physicslists.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4run.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4event.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4tracking.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4parmodels.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4processes.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4digits_hits.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4track.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4particles.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4geometry.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4materials.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4graphics_reps.lib;opengl32.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5PrintSupport.lib;COMCTL32.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt53DExtras.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt53DInput.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5Gamepad.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt53DLogic.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt53DRender.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt53DCore.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5Network.lib;C:\Qt\5.15.15\msvc2019_64\lib\Qt5Core.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4analysis.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4expat.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4zlib.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4intercoms.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4global.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4clhep.lib;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\G4ptl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/Release/sim.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/Release/sim.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4 -BC:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build --check-stamp-file C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DCore\Qt53DCoreConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DCore\Qt53DCoreConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DExtras\Qt53DExtrasConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DExtras\Qt53DExtrasConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DInput\Qt53DInputConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DInput\Qt53DInputConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DLogic\Qt53DLogicConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DLogic\Qt53DLogicConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRenderConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRenderConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_AssimpSceneImportPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_DefaultGeometryLoaderPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_GLTFGeometryLoaderPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_GLTFSceneExportPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_GLTFSceneImportPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_OpenGLRendererPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt53DRender\Qt53DRender_Scene2DPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gamepad\Qt5GamepadConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gamepad\Qt5GamepadConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gamepad\Qt5Gamepad_QXInputGamepadBackendPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.15\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\3.28.0-rc4\CMakeCCompiler.cmake;C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Geant4Config.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Geant4ConfigVersion.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Geant4LibraryDepends-release.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Geant4LibraryDepends.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Geant4PackageCache.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Modules\IntelCompileFeatures.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\Modules\MSVCCompileFeatures.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\PTL\PTLConfig.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\PTL\PTLConfigVersion.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\PTL\PTLTargets-release.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\PTL\PTLTargets-relwithdebinfo.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\PTL\PTLTargets.cmake;C:\Users\sean\OneDrive\Documents\MPhys\Project\GEANT4\geant4-v11.1.2 (1)\Program Files\lib\cmake\Geant4\UseGeant4.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\sim.cc" />
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.cc" />
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.cc" />
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.cc" />
+    <ClCompile Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.cc" />
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\action.hh" />
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\construction.hh" />
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\generator.hh" />
+    <ClInclude Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\physics.hh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\ZERO_CHECK.vcxproj">
+      <Project>{509F25B4-E009-3913-AD62-292CAF8E7F63}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

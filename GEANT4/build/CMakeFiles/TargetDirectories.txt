@@ -1,0 +1,4 @@
+C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/CMakeFiles/sim.dir
+C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/CMakeFiles/Simulation.dir
+C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/CMakeFiles/ZERO_CHECK.dir

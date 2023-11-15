@@ -1,0 +1,10 @@
+^C:\USERS\SEAN\ONEDRIVE\DOCUMENTS\MPHYS\MPHYS-PROJECT\GEANT4\BUILD\CMAKEFILES\062A408D795DFEF28B91B2467305B7EB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4 -BC:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sean/OneDrive/Documents/MPhys/MPhys-Project/GEANT4/build/Simulation.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\062a408d795dfef28b91b2467305b7eb\Simulation.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\sean\OneDrive\Documents\MPhys\MPhys-Project\GEANT4\build\CMakeFiles\Simulation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{417C4A65-DAA9-39B7-A468-0591E6BA8C65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
