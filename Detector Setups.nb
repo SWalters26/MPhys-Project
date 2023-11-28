@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     17838,        432]
-NotebookOptionsPosition[     17163,        412]
-NotebookOutlinePosition[     17659,        430]
-CellTagsIndexPosition[     17616,        427]
+NotebookDataLength[     28647,        667]
+NotebookOptionsPosition[     27682,        644]
+NotebookOutlinePosition[     28178,        662]
+CellTagsIndexPosition[     28135,        659]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -250,7 +250,7 @@ Cell[BoxData[{
          RowBox[{"EmptyRegion", "[", "3", "]"}]}], ",", 
         RowBox[{"y", "=", "0"}], ",", 
         RowBox[{"y", "=", 
-         RowBox[{"ArcLength", "[", 
+         RowBox[{"RegionMeasure", "[", 
           RowBox[{"RegionIntersection", "[", 
            RowBox[{"det1", ",", "ray1"}], "]"}], "]"}]}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
@@ -263,7 +263,7 @@ Cell[BoxData[{
          RowBox[{"EmptyRegion", "[", "3", "]"}]}], ",", 
         RowBox[{"y", "=", "0"}], ",", 
         RowBox[{"y", "=", 
-         RowBox[{"ArcLength", "[", 
+         RowBox[{"RegionMeasure", "[", 
           RowBox[{"RegionIntersection", "[", 
            RowBox[{"det2", ",", "ray1"}], "]"}], "]"}]}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
@@ -276,7 +276,7 @@ Cell[BoxData[{
          RowBox[{"EmptyRegion", "[", "3", "]"}]}], ",", 
         RowBox[{"y", "=", "0"}], ",", 
         RowBox[{"y", "=", 
-         RowBox[{"ArcLength", "[", 
+         RowBox[{"RegionMeasure", "[", 
           RowBox[{"RegionIntersection", "[", 
            RowBox[{"det1", ",", "ray2"}], "]"}], "]"}]}]}], "]"}]}], ";", 
      "\[IndentingNewLine]", 
@@ -289,40 +289,35 @@ Cell[BoxData[{
          RowBox[{"EmptyRegion", "[", "3", "]"}]}], ",", 
         RowBox[{"y", "=", "0"}], ",", 
         RowBox[{"y", "=", 
-         RowBox[{"ArcLength", "[", 
+         RowBox[{"RegionMeasure", "[", 
           RowBox[{"RegionIntersection", "[", 
            RowBox[{"det2", ",", "ray2"}], "]"}], "]"}]}]}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
+     RowBox[{"(*", "RegionMeasure", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"{", 
       RowBox[{"x1", ",", "x2", ",", "x3", ",", "x4"}], "}"}]}]}], 
    "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"lst", "=", 
-    RowBox[{"Table", "[", 
-     RowBox[{"event", ",", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", "1000"}], "}"}]}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{"test", " ", "=", " ", 
-     RowBox[{"Compile", "[", 
-      RowBox[{
-       RowBox[{"{", "}"}], ",", 
-       RowBox[{"Table", "[", 
-        RowBox[{"event", ",", 
-         RowBox[{"{", 
-          RowBox[{"i", ",", "1000"}], "}"}]}], "]"}], ",", 
+  RowBox[{"lst", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{"event", ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1000"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"test", " ", "=", " ", 
+   RowBox[{"Compile", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", 
+     RowBox[{"Table", "[", 
+      RowBox[{"event", ",", 
        RowBox[{"{", 
-        RowBox[{"{", 
-         RowBox[{"i", ",", "_Integer"}], "}"}], "}"}], ",", 
-       RowBox[{"Parallelization", "->", "True"}]}], "]"}]}], ";", 
-    "\[IndentingNewLine]", 
-    RowBox[{"test1", "=", 
-     RowBox[{"Total", "[", 
-      RowBox[{
-       RowBox[{"test", "[", "]"}], ",", "1"}], "]"}]}]}], "*)"}], " ", 
+        RowBox[{"i", ",", "1000"}], "}"}]}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"test1", "=", 
+   RowBox[{"Total", "[", 
+    RowBox[{
+     RowBox[{"test", "[", "]"}], ",", "1"}], "]"}]}], " ", 
   RowBox[{"(*", 
    RowBox[{"22.62", "s", " ", "for", " ", "1000", " ", "values"}], 
    "*)"}]}], "\[IndentingNewLine]", 
@@ -338,7 +333,20 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"i", ".", "e", ".", " ", "the"}], " ", "total", " ", "distance", 
      " ", "travelled", " ", "through", " ", "each", " ", "detector", " ", 
-     "by", " ", "each", " ", "ray"}]}], 
+     "by", " ", "each", " ", "ray"}]}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"count2", " ", "=", " ", 
+   RowBox[{"Count", "[", 
+    RowBox[{
+     RowBox[{"{", "lst", "}"}], ",", 
+     RowBox[{"x_", "/;", 
+      RowBox[{"x", "!=", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "_", ",", "_", ",", "_"}], "}"}]}]}]}], "]"}]}], 
+  " ", 
+  RowBox[{"(*", 
+   RowBox[{
+   "Det1", " ", "ray", " ", "1", " ", "number", " ", "of", " ", "events"}], 
    "*)"}]}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.9081071559053063`*^9, 3.9081072564701424`*^9}, {
    3.9081081327406597`*^9, 3.9081081573399897`*^9}, {3.9081081880368023`*^9, 
@@ -369,40 +377,264 @@ Cell[BoxData[{
    3.9084538183531065`*^9}, {3.908453942556381*^9, 3.9084539471267133`*^9}, {
    3.908454036366334*^9, 3.9084540388805313`*^9}, {3.9084542970890617`*^9, 
    3.9084543957348547`*^9}, 3.908454457807*^9, {3.9084546331980543`*^9, 
-   3.908454640094702*^9}, 3.9090837095259013`*^9},
+   3.908454640094702*^9}, 3.9090837095259013`*^9, 3.9091144975731354`*^9, {
+   3.9091146115523443`*^9, 3.9091146166686754`*^9}, {3.9091146591964297`*^9, 
+   3.909114662336418*^9}, 3.9091147058889523`*^9, {3.9091147394774218`*^9, 
+   3.909114744485346*^9}, {3.909115193227088*^9, 3.9091152273339157`*^9}, {
+   3.9091153102791033`*^9, 3.909115312692658*^9}, 3.909115352192058*^9, {
+   3.9091153980336847`*^9, 3.909115398532216*^9}, {3.90911547916716*^9, 
+   3.909115523303424*^9}, {3.909115610000264*^9, 3.909115644559311*^9}, {
+   3.9091194704580727`*^9, 3.9091194999594154`*^9}, {3.909120034447676*^9, 
+   3.909120042122447*^9}, {3.909125700539587*^9, 3.909125707073629*^9}, 
+   3.9091258518875504`*^9, {3.9091259940222163`*^9, 3.909126010497616*^9}, {
+   3.909126048553834*^9, 3.9091260495613585`*^9}, {3.909126513563507*^9, 
+   3.9091265141841364`*^9}, {3.909126662431362*^9, 3.9091266712127805`*^9}, 
+   3.9091275006865597`*^9},ExpressionUUID->"d000b915-052a-4e36-a3cf-\
+80524aa6ef61"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Compile", "err1", 
+   "\"Expected pure function or function in the compiler environment with a \
+single monomorphic type, but found \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \\\"0\\\", \\\",\\\", \
+\\\"0\\\"}], \\\"}\\\"}]\\) instead.\"", 2, 713, 168, 29609248547887901543, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9091195348281846`*^9, 3.9091257418090024`*^9, 
+  3.909125880449723*^9, 3.909126039981711*^9, 3.9091260929434633`*^9, 
+  3.909126755468957*^9},
  CellLabel->
-  "11/16/23 00:35:13 \
-In[613]:=",ExpressionUUID->"d000b915-052a-4e36-a3cf-80524aa6ef61"],
+  "11/16/23 12:32:35 During evaluation of \
+In[709]:=",ExpressionUUID->"6c9684ef-590f-4d5d-9942-4dfe918032f2"],
+
+Cell[BoxData[
+ RowBox[{"Total", "[", 
+  RowBox[{
+   RowBox[{
+    InterpretationBox[
+     RowBox[{
+      TagBox["Failure",
+       "SummaryHead"], "[", 
+      DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = 
+       "Ready"}, 
+       TemplateBox[{
+         PaneSelectorBox[{False -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"],
+                   ImageSizeCache -> {
+                   10.869016023673117`, {0., 10.869016023673117`}}], 
+                 Appearance -> None, BaseStyle -> {}, 
+                 ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+                 Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 
+                   3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+               FrameBox[
+                StyleBox[
+                "\"\[WarningSign]\"", "Message", StripOnInput -> False, 
+                 FontSize -> 35], ContentPadding -> False, 
+                FrameMargins -> {{0, 0}, {0, 0}}, FrameStyle -> None, 
+                StripOnInput -> False], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox[
+                    
+                    TemplateBox[{"\"MessageTemplate\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    InterpretationBox[
+                    "\"Expected pure function or function in the compiler \
+environment with a single monomorphic type, but found \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \
+\\\",\\\", \\\"0\\\", \\\",\\\", \\\"0\\\"}], \\\"}\\\"}]\\) instead.\"", 
+                    StringForm[
+                    "Expected pure function or function in the compiler \
+environment with a single monomorphic type, but found `1` instead.", {0, 0, 0,
+                     0}], Editable -> False], HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    
+                    TemplateBox[{"\"MessageParameters\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    RowBox[{"{", "}"}], HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox["\"CompilerException\"", HoldForm], 
+                    "SummaryItem"]}]}}, AutoDelete -> False, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+             False, BaselinePosition -> {1, 1}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+           GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"],
+                   ImageSizeCache -> {
+                   10.869016023673117`, {0., 10.869016023673117`}}], 
+                 Appearance -> None, BaseStyle -> {}, 
+                 ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+                 Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 
+                   3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+               FrameBox[
+                StyleBox[
+                "\"\[WarningSign]\"", "Message", StripOnInput -> False, 
+                 FontSize -> 35], ContentPadding -> False, 
+                FrameMargins -> {{0, 0}, {0, 0}}, FrameStyle -> None, 
+                StripOnInput -> False], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox[
+                    
+                    TemplateBox[{"\"MessageTemplate\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    InterpretationBox[
+                    "\"Expected pure function or function in the compiler \
+environment with a single monomorphic type, but found \
+\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"0\\\", \
+\\\",\\\", \\\"0\\\", \\\",\\\", \\\"0\\\"}], \\\"}\\\"}]\\) instead.\"", 
+                    StringForm[
+                    "Expected pure function or function in the compiler \
+environment with a single monomorphic type, but found `1` instead.", {0, 0, 0,
+                     0}], Editable -> False], HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    
+                    TemplateBox[{"\"MessageParameters\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    RowBox[{"{", "}"}], HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox["\"CompilerException\"", HoldForm], 
+                    "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Details\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox["None", HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Exception\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    "CompileUtilities`Error`Exceptions`CompilerException", 
+                    HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Body\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Expected pure function or function in the compiler \
+environment with a single monomorphic type, but found `1` instead.\"", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}]}], 
+                    "}"}], HoldForm], "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    TemplateBox[{"\"Stack\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    TagBox[
+                    RowBox[{"{", "}"}], HoldForm], "SummaryItem"]}]}}, 
+                AutoDelete -> False, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+             False, BaselinePosition -> {1, 1}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+          Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+        "SummaryPanel"],
+       DynamicModuleValues:>{}], "]"}],
+     Failure[
+     "CompilerException", <|
+      "MessageTemplate" -> 
+       StringForm[
+        "Expected pure function or function in the compiler environment with \
+a single monomorphic type, but found `1` instead.", {0, 0, 0, 0}], 
+       "MessageParameters" -> {}, "Details" -> None, "Exception" -> 
+       CompileUtilities`Error`Exceptions`CompilerException, 
+       "Body" -> {
+        "Expected pure function or function in the compiler environment with \
+a single monomorphic type, but found `1` instead.", {0, 0, 0, 0}}, 
+       "Stack" -> {}|>],
+     Editable->False,
+     SelectWithContents->True,
+     Selectable->False], "[", "]"}], ",", "1"}], "]"}]], "Output",
+ CellChangeTimes->{3.9091195599867253`*^9, 3.909125768735254*^9, 
+  3.90912590669409*^9, 3.9091260666340637`*^9, 3.909126118702854*^9, 
+  3.9091267554979324`*^9},
+ CellLabel->
+  "11/16/23 12:32:35 \
+Out[714]=",ExpressionUUID->"35c959c3-1c45-4a69-9ad3-344fb844fbcc"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "20.76428028463375`", ",", "29.0211031016457`", ",", "21.456627488272602`", 
-   ",", "19.979979561588493`"}], "}"}]], "Output",
- CellChangeTimes->{{3.908107206412554*^9, 3.90810726199578*^9}, 
-   3.908108161328271*^9, {3.908108228807976*^9, 3.908108300384222*^9}, 
-   3.908108398715319*^9, {3.908108430736388*^9, 3.9081084754870744`*^9}, 
-   3.908108561531213*^9, 3.9081086511588707`*^9, 3.9081087710476933`*^9, 
-   3.908108807919547*^9, 3.9081088396658735`*^9, 3.9081090097900085`*^9, 
-   3.9081090933048677`*^9, 3.9081091405301247`*^9, 3.9081092155495963`*^9, 
-   3.908109318006143*^9, {3.908109387894496*^9, 3.9081094128183565`*^9}, {
-   3.908109506316533*^9, 3.9081095175324335`*^9}, 3.9081095697471128`*^9, {
-   3.908109603463586*^9, 3.9081096273901334`*^9}, 3.9081096878885603`*^9, {
-   3.9081097233513455`*^9, 3.908109759514742*^9}, {3.9081098003365803`*^9, 
-   3.9081098476796103`*^9}, {3.908109951939601*^9, 3.9081099803491597`*^9}, {
-   3.908110013468446*^9, 3.908110028974398*^9}, 3.90811008172783*^9, 
-   3.9081124262351656`*^9, {3.908112788231331*^9, 3.9081128059842615`*^9}, 
-   3.9081130896895285`*^9, 3.9081131354320784`*^9, {3.9081131657967815`*^9, 
-   3.908113205240424*^9}, 3.9081132533130913`*^9, 3.9081140026253085`*^9, 
-   3.9081149154090166`*^9, 3.9081150205771103`*^9, 3.908115330964135*^9, 
-   3.908115809882207*^9, 3.90811591323028*^9, 3.9081160928486724`*^9, 
-   3.9084536192046576`*^9, 3.908453717643132*^9, 3.908453820682786*^9, 
-   3.9084539524943695`*^9, 3.908454040836279*^9, 3.908454389824332*^9, 
-   3.908454504191617*^9, 3.908454569134708*^9, 3.908454672110369*^9, 
-   3.9090837375736427`*^9},
+  "24.6885404504393`", ",", "17.40958385160713`", ",", "36.03763833972053`", 
+   ",", "27.83600224910112`"}], "}"}]], "Output",
+ CellChangeTimes->{3.9091195599867253`*^9, 3.909125768735254*^9, 
+  3.90912590669409*^9, 3.9091260666340637`*^9, 3.909126118702854*^9, 
+  3.909126755513568*^9},
  CellLabel->
-  "11/16/23 00:35:37 \
-Out[617]=",ExpressionUUID->"4dd77f6b-9d9a-44f2-80ea-89454352584d"]
+  "11/16/23 12:32:35 \
+Out[715]=",ExpressionUUID->"1481e149-707e-44db-944e-fe2c9622c450"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.9091195599867253`*^9, 3.909125768735254*^9, 
+  3.90912590669409*^9, 3.9091260666340637`*^9, 3.909126118702854*^9, 
+  3.909126755513568*^9},
+ CellLabel->
+  "11/16/23 12:32:35 \
+Out[716]=",ExpressionUUID->"27792503-0e13-42ae-9039-49b7c2b29546"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -430,10 +662,13 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 14632, 352, 728, "Input",ExpressionUUID->"d000b915-052a-4e36-a3cf-80524aa6ef61"],
-Cell[15215, 376, 1773, 28, 69, "Output",ExpressionUUID->"4dd77f6b-9d9a-44f2-80ea-89454352584d"]
+Cell[580, 22, 15722, 370, 733, "Input",ExpressionUUID->"d000b915-052a-4e36-a3cf-80524aa6ef61"],
+Cell[16305, 394, 688, 14, 28, "Message",ExpressionUUID->"6c9684ef-590f-4d5d-9942-4dfe918032f2"],
+Cell[16996, 410, 9782, 206, 148, "Output",ExpressionUUID->"35c959c3-1c45-4a69-9ad3-344fb844fbcc"],
+Cell[26781, 618, 431, 10, 46, "Output",ExpressionUUID->"1481e149-707e-44db-944e-fe2c9622c450"],
+Cell[27215, 630, 292, 6, 46, "Output",ExpressionUUID->"27792503-0e13-42ae-9039-49b7c2b29546"]
 }, Open  ]],
-Cell[17003, 407, 156, 3, 28, "Input",ExpressionUUID->"cafd7d58-f12f-4994-87fb-22b2486b769e"]
+Cell[27522, 639, 156, 3, 28, "Input",ExpressionUUID->"cafd7d58-f12f-4994-87fb-22b2486b769e"]
 }
 ]
 *)

@@ -5,6 +5,7 @@
 #include "G4VPhysicalVolume.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
+#include "G4Tubs.hh"
 #include "G4PVPlacement.hh"
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
@@ -21,21 +22,27 @@ public:
 	virtual G4VPhysicalVolume *Construct();
 
 private:
-	G4LogicalVolume *logicDetector;
 	virtual void ConstructSDandField();
 
 	G4int nCols, nRows;
 
 	G4Box *solidWorld, *solidRadiator, *solidDetector;
-	G4LogicalVolume *logicWorld, *logicRadiator;
-	G4VPhysicalVolume *physWorld, *physRadiator, *physDetector;
+	G4Tubs *solidScintillator;
+	G4LogicalVolume *logicWorld, *logicRadiator, *logicDetector, *logicScintillator;
+	G4VPhysicalVolume *physWorld, *physRadiator, *physDetector, *physScintillator;
 
 	G4GenericMessenger *fMessenger;
 
-	G4Material *SiO2, *H2O, *Aerogel, *worldMat;
-	G4Element *C;
+	G4Material *SiO2, *H2O, *Aerogel, *worldMat, *NaI;
+	G4Element *C, *Na, *I;
 
 	void DefineMaterials();
+
+	void ConstructCherenkov();
+	void ConstructScintillator();
+
+	G4double xWorld, yWorld, zWorld;
+	G4bool isCherenkov, isScintillator;
 };
 
 #endif
